@@ -125,4 +125,16 @@ public class Player {
                 + " , Money : "
                 + this.characters.getMoney());
     }
+
+    public void playerStats() {
+        System.out.println("\nPlayer Status");
+        System.out.println("----------------------");
+        System.out.println(
+                "Damage : " + this.getCharacters().getNew_damage() + "\nBlock : "
+                        + this.getInventory().getArmor().getBlock_value() + "\nWeapon : "
+                        + this.getInventory().getWeapon().getName()
+                        + "\nHealth : " + this.getCharacters().getHealth()
+                        + "\nArmor : " + this.getInventory().getArmor().getName()
+                        + "\nMoney : " + this.getCharacters().getMoney());
+    }
 }

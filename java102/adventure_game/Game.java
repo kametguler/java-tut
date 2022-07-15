@@ -20,7 +20,8 @@ public class Game {
         while (true) {
             player.selectLocation();
             if (!player.getLocation().onLocation()) {
-                System.out.println("Game Over");
+                System.out.println("\nGame Over");
+                System.exit(0);
             }
 
         }

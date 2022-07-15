@@ -2,7 +2,7 @@ package adventure_game;
 
 public abstract class Characters {
     private String name;
-    private int id, damage, health, money, new_damage;
+    private int id, damage, health, money, new_damage, default_health;
 
     public Characters(int id, int damage, int health, int money, String name) {
         this.id = id;
@@ -10,7 +10,16 @@ public abstract class Characters {
         this.health = health;
         this.money = money;
         this.name = name;
+        default_health = health;
         this.new_damage = damage;
+    }
+
+    public int getDefault_health() {
+        return default_health;
+    }
+
+    public void setDefault_health(int default_health) {
+        this.default_health = default_health;
     }
 
     public int getNew_damage() {
